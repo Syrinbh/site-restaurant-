@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="./index.html">    
+            <img src="./images/logorestautransparent.png" alt="Logo du restaurant">
+        </a>
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./menu.html">La Carte</a></li>
+            <li><a href="./reservation.html">Reservation</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section d'accueil -->
+    <section class="accueil1">
+        <div class="accueil1-content">
+            <h1><strong>Le voyage gourmand</strong></h1>
+            <p><em>Une expérience gastronomique d’exception</em></p>
+            <p>à Clermont-ferrand</p>
+            <p>Savourez chaque instant, voyagez à travers les saveurs.</p>
+            <a href="./menu.html" class="btn">La Carte</a>
+        </div>
+    </section>
+
+    <!-- Nouvelle Section avec image de fond et texte -->
+    <section class="accueil2">
+        <div class="titreaccueil2">
+            <h1>
+                <span class="part1">RESTAURANT GASTRONOMIQUE</span><br>
+                <span class="part2">À CLERMONT-FERRAND</span>
+            </h1>
+            <p class="sous-titre">Une gastronomie séduisante</p>
+            <div class="description">
+                <p>
+                    Petit nouveau à Clermont-Ferrand, notre restaurant est le fruit d'une passion familiale pour la gastronomie. 
+                    Découvrez une cuisine raffinée alliant tradition et modernité dans un cadre élégant et chaleureux.
+                </p>
+                <p>
+                    Chaque plat est une création soignée pour éveiller vos papilles et vous offrir un moment d’exception.
+                </p>
+            </div>
+        </div>
+        <div class="accueil2-image">
+            <img src="./images/index11.jpg" alt="Restaurant Le Voyage Gourmand">
+        </div>
+    </section>
+    
+    <div class="bloc-pagecontact">
+        <div class="description-pagecontact">
+            <div class="image-pagecontact">
+                <img src="./images/image4index.jpg" alt="image-pagecontact">
+            </div>
+            <div class="description">
+                <p>18, rue la Boetie, 63000 Clermont-Ferrand</p>
+                <p>Tél : <a href="tel:0144900295">01 44 90 02 95</a></p>
+                <p>Ouvert du Mardi au Dimanche : 12:00-14:30 et 19:00-22h30 (Fermé le lundi)</p>
+                <p>Service Voiturier disponible en soirée le Vendredi, Samedi et Dimanche (Coût 20€)</p>
+                <a href="./reservation.html" class="btn">Reservation</a>
+            </div>
+        </div>
+    </div>
+    <!-- Formulaire de connexion -->
+    <div class="login-section">
+        <form id="loginForm">
+            <div class="form-group">
+                <input type="text" id="loginUsername" placeholder="Nom d'utilisateur" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="loginPassword" placeholder="Mot de passe" required>
+            </div>
+            <button type="submit">Se connecter</button>
+        </form>
+        <div id="loginMessage"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./images/logorestaunoir.png" alt="Logo du restaurant">
+            </div>
+            <hr class="footer-separator">
+            <div class="footer-text">
+                <p>18, rue la Boetie, 63000 Clermont-Ferrand</p>
+                <p>Tel : <a href="tel:0144900295">01 44 90 02 95</a></p>
+                <p>Ouvert du Mardi au Dimanche : 12:00-14:30 et 19:00-22h30 (Fermé le lundi)</p>
+                <p>Service Voiturier disponible en soirée le Vendredi, Samedi et Dimanche (Coût 20€)</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <hr class="footer-separator">
+            <div class="footer-links">
+                <a href="#">Mentions légales</a>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Plan du site</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./javascript/javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,964 @@
+/* ==================== POLICES ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@300&family=Roboto:wght@300&display=swap');
+
+/* ==================== RESET CSS ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #000;
+    
+  }
+
+/* ==================== NAVBAR ==================== */
+.navbar {
+    background-color: rgba(54, 12, 19, 0.8) !important; /* Doré avec transparence */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed; /* Fixe la navbar en haut */
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px); /* Effet de flou pour un style plus élégant */
+    z-index: 9999 !important; /* Pour s'assurer qu'elle reste au-dessus des autres éléments */
+}
+.navbar img {
+    height: 80px; /*  taille du logo */
+    width: 140px; /*  largeur du logo */
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #f9f5f5; /* Gris anthracite pour du contraste */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+.navbar a:hover {
+    color: #e0988f !important; /* Couleur dorée au survol */
+}
+
+/* ==================== ACCUEIL 1 ==================== */
+.accueil1 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: url('../images/indeximage.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.accueil1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+.accueil1-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.accueil1 h1 {
+    font-size: 50px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.accueil1 p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.accueil1 h1 strong {
+    font-weight: bold;
+}
+.accueil1 p em {
+    font-style: italic;
+}
+.accueil1 p:last-of-type {
+    margin-bottom: 40px;
+}
+.btn {
+    background-color: #794540;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+.btn:hover {
+    background-color: #502e2b;
+}
+
+/* ==================== ACCUEIL 2 ==================== */
+.accueil2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #fff;
+    min-height: 90vh;
+    gap: 50px;
+}  
+.titreaccueil2 {
+        flex: 1;
+}
+  
+.titreaccueil2 h1 {
+    font-size: 2.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    color: #675031;
+    line-height: 1.3;
+    letter-spacing: 1px;
+}
+  
+.titreaccueil2 .part1, .titreaccueil2 .part2 {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.5s ease;
+}
+  
+.titreaccueil2 .part2 {
+    color: #b07b45; /* Couleur de base */
+}
+
+.sous-titre {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #222;
+    transition: transform 0.3s ease-out;
+}
+  
+.description {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.7;
+    max-width: 90%;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+  
+.accueil2-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;         
+}
+
+.accueil2-image img {
+    width: 100%;                  
+    max-width: 400px;            
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+    background-color: #fff;
+    color: #222;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.footer-logo img {
+    width: 320px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.footer-separator {
+    border: none;
+    height: 1px;
+    background-color: #b07b45;  /* Doré */
+    width: 90%;
+    margin: 20px auto;
+}
+.footer-text p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #222;
+    font-weight: 300;
+}
+.footer a {
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: #b07b45; /* Doré au survol */
+}
+.footer-social {
+    margin: 20px 0;
+}
+.footer-social a {
+    margin: 0 12px;
+    font-size: 20px;
+    color: #222;
+}
+.footer-social a:hover {
+    color: #b07b45;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    margin-top: 20px;
+}
+.footer-links a {
+    border-bottom: 1px solid transparent;
+}
+.footer-links a:hover {
+    border-color: #b07b45;
+}
+
+/* ==================== PAGE MENU ==================== */
+.menu-header {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url('../images/carte2.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.menu-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.restaurant-logo {
+    position: absolute;
+    top: 87px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+}
+.menu-header-content {
+    padding-top: 120px; 
+    position: relative;
+    z-index: 1;
+}
+.menu-header-content h1 {
+    font-size: 50px;
+}
+.menu-header-content p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.menu-content {
+    padding: 50px;   
+}
+.menu-section {
+    background-color: #fff; 
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* Titre de section Entrées / Plats */
+.menu-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 35px;
+    color: #926b07; /* Doré chic */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.menu-items {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Chaque plat */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*flex-start*/
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+/* Nom du plat en noir */
+.menu-item .dish-name {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+/*ligne doré */
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #c8a46b; /* Couleur dorée */
+  }
+/* Prix du plat à droite */
+.dish-price {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.dish-desc {
+    width: 100%;
+    font-size: 0.85rem;
+    color: #c8a46b;  /* Doré */
+    margin-top: 5px;
+}
+  
+/* Séparation fine entre nom et prix */
+.menu-item::before {
+    content: "";
+    position: absolute;
+    bottom: 38px;
+    left: 0;
+    right: 80px;
+    border-bottom: 1px solid #d3b58f;
+    z-index: -1;
+}
+  
+
+/* ================== Page contact ================== */
+.debut-contact {
+    margin-top: 80px; /* Compensation navbar fixe */
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.debut-image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.debut-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    filter: brightness(0.9);
+    will-change: transform; /* pour animation js*/ 
+    transition: transform 0.3s ease-out;
+}
+.contenu-image {
+    position: absolute;
+    top: 70%;
+    bottom: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    width: 90%;
+}
+
+.contenu-image h1 {
+    color: #c8a46b;
+    font-size: 4rem;
+    
+    letter-spacing: 2px;
+    font-family: 'Cormorant Garamond', serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* partie contact où texte + image */ 
+.paragraphe-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5%; 
+    background-color: #fff;
+    gap: 30px;
+}
+.contact-image-droite {
+    flex: 1;
+    max-width: 420px; 
+}
+.contact-image-droite img {
+    width: 100%;        
+    height: auto;        
+    max-height: 340px;   
+    object-fit: cover;   
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.contact-texte {
+    flex: 1;
+    max-width: 600px;
+    display: flex;             
+    flex-direction: column;    
+    justify-content: center;
+}
+.contact-texte h2 {
+    font-size: 2.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    color: #675031;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.contact-texte h2 em {
+    color: #b07b45;
+    font-style: normal;
+}
+.contact-texte p {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.7;
+}
+.contact-image-droite {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.contact-image-droite img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* partie pour btn de page contact */ 
+.paragraphe-image .btn {
+    margin-top: 30px; 
+    display: inline-block; 
+    position: relative;
+    align-self: center; 
+}
+.contact-texte .btn {
+    align-self: center;  
+}
+
+/*partie description page contact + image */ 
+/* Section Contact */
+.bloc-pagecontact {
+    padding: 40px 0;
+}
+.description-pagecontact {
+    display: flex;
+    align-items: flex-start;
+    gap: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap; 
+}
+.image-pagecontact {
+    flex: 0 0 40%;  
+}
+.image-pagecontact img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.description p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Le bouton sous le texte */
+.description-pagecontact .btn {
+    align-self: flex-start;
+    margin-top: 20px;
+    background-color: #794540;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.description-pagecontact .btn:hover {
+    background-color: #502e2b;
+}
+.description .btn,
+.contact-texte .btn {
+    align-self: center;  
+}
+
+/* tableau : partie avis clients */ 
+#avis-clients {
+    text-align: center; /* Centrer le titre */
+    color: #b07b45; /* Couleur dorée */
+    font-family: 'Gourmand', sans-serif; /* Police Gourmand */
+    font-size: 1.5rem; /* Taille de la police réduite */
+    font-weight: 100;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+#avis-clients em {
+    color: #7d1c1c;
+    font-style: normal;
+}
+
+#avis-clients table {
+    width: 80%; /* Largeur du tableau réduite */
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 0.9rem; /* Taille de la police du tableau réduite */
+}
+
+#avis-clients table th,
+#avis-clients table td {
+    padding: 10px 12px; /* Espacement réduit dans les cellules */
+    text-align: left;
+    border: 1px solid #000000;
+}
+
+#avis-clients table th {
+    background-color: #ffe6e6;
+    font-weight: bold;
+    font-size: 1rem; /* Taille de police plus petite pour les titres de colonnes */
+}
+
+
+#avis-clients table tr:hover {
+    background-color: #f1f1f1;
+}
+
+#avis-clients table td {
+    font-style: italic;
+    color: #0a0a0a;
+    font-size: 0.9rem; /* Taille de police réduite pour le contenu des cellules */
+}
+
+/* ==================== LOGIN ==================== */
+.login-section {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #b8860b;
+    border-radius: 5px;
+}
+
+#loginForm button {
+    background: #b8860b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+#loginForm button:hover {
+    background: #9a6d0a;
+}
+
+#loginMessage {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.error-message {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #c62828;
+}
+
+.success-message {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #2e7d32;
+}
+
+/* Style spécifique au formulaire */
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.error-message {
+    color: #dc3545;
+    font-size: 0.875em;
+    display: none;
+    margin-top: 0.25rem;
+}
+input.valid {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+input.invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+#submitBtn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+.registration-section {
+    max-width: 800px;
+    margin: 150px auto 50px;
+    padding: 30px;
+}
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #b8860b;
+    font-weight: 600;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+input:focus {
+    outline: none;
+    border-color: #b8860b;
+}
+.valid-input {
+    border-color: #28a745 !important;
+}
+.invalid-input {
+    border-color: #dc3545 !important;
+}
+#submitBtn {
+    background: #b8860b;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: opacity 0.3s ease;
+    width: 100%;
+}
+/*partie chatbox*/ 
+.chat-container {
+    width: 100%; 
+    max-width: 800px;
+    margin: 50px auto; 
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    margin-top: 110px;
+}
+.chat-header {
+    padding: 15px;
+    background: #633732; 
+    color: white;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chat-header h6 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    background: #f9f9f9;
+    height: 400px; 
+}
+
+.chat-messages div {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    max-width: 80%;
+}
+
+.message.user {
+    background: #faffcf;
+    align-self: flex-end;
+}
+
+.message.staff {
+    background: #f8d7da;
+    align-self: flex-start;
+}
+
+.chat-input {
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid #ddd;
+    background: white;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+/* Bouton envoyer */
+.btn-chat {
+    background: #794540;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+.btn-chat:hover {
+    background: #633732;
+}
+
+
+/* Style du bouton flottant */
+.chat-floating-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px 25px;
+    background: #794540;
+    color: white !important;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    font-size: 0.95em;
+}
+
+.chat-floating-btn i {
+    font-size: 1.2em;
+}
+
+.chat-floating-btn:hover {
+    background: #633732;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0,0,0,0.4);
+}
+
+.fa-rotate-by {
+    transform: rotate(var(--fa-rotate-angle, 0deg));
+}
+
+/* ====================
+   RESPONSIVE DESIGN
+   ==================== */
+
+/* ======= Général ======= */
+@media (max-width: 1200px) {
+    .accueil2 {
+        padding: 50px 40px;
+        gap: 30px;
+    }
+    .titreaccueil2 h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .accueil2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+    }
+    .titreaccueil2 {
+        order: 1;
+        max-width: 800px;
+    }
+    .accueil2-image {
+        width: 80%;
+        max-width: 600px;
+        order: 2;
+    }
+    .description {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .titreaccueil2 h1 {
+        font-size: 2.8rem;
+        line-height: 1.1;
+    }
+    .sous-titre {
+        font-size: 1.3rem;
+        margin-top: 15px;
+    }
+    .accueil2-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .accueil2 {
+        padding: 30px 20px;
+    }
+    .titreaccueil2 h1 {
+        font-size: 2.2rem;
+    }
+    .sous-titre {
+        font-size: 1.1rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .accueil2-image img {
+        border-radius: 8px;
+    }
+}
+
+/* ======= Navbar ======= */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar ul li {
+        width: 100%;
+    }
+    .menu-header-content h1 {
+        font-size: 32px;
+    }
+    .menu-header-content p {
+        font-size: 14px;
+    }
+    .menu-section h2 {
+        font-size: 24px;
+    }
+}
+
+/* ======= Page Contact ======= */
+@media (max-width: 768px) {
+    .description-pagecontact {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-pagecontact {
+        float: none;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .image-pagecontact img {
+        height: 200px;
+    }
+    .btn {
+        align-self: center;
+    }
+}
+
+/* ======= Bloc Contact ======= */
+@media (max-width: 768px) {
+    .bloc-contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .image-contact {
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .bloc-contact .btn {
+        margin-top: 20px;
+    }
+}
+
+/* ======= Chat ======= */
+@media (max-width: 600px) {
+    .chat-container {
+        width: 95%;
+        height: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .chat-floating-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        font-size: 0.85em;
+    }
+    .chat-floating-btn i {
+        font-size: 1em;
+    }
+}
